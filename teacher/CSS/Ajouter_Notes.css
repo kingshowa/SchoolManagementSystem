@@ -1,0 +1,187 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+
+body{
+    background-color: rgba(155, 155,  219, 0.3);
+}
+
+.tete{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    box-shadow: 3px 2px 2px rgba(33,33,33,0.3);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: #ffffff;
+}
+
+
+.uni-name{
+    padding-top: 2px;
+    text-align: center;
+    color: #06164E;
+    align-items: center;
+}
+
+
+#profile a{
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    color: #06164E;
+    margin-left: 5px;
+}
+#prof-pic{
+    border-radius: 50%;
+}
+/*end of header*/
+
+
+.main-side{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 40vh;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #ffffff;
+    margin-top: 5.3vh;
+    margin-bottom: 5.2vh;
+    grid-column-gap: 2vw;
+}  
+
+
+.personal-info>form{
+    color: black;
+    min-width: 80%;
+    min-height: 510px;
+    background-color: #A2B1E5;
+    padding-top: 30px;
+}
+table{
+    width: 100%;
+}
+
+tr>td:nth-child(1){
+    width:30%;
+}
+
+th,td{
+    padding: 8px 10px;
+}
+
+
+
+
+
+/*optios */
+.options{
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    grid-row-gap: 2vh;
+    align-self: right;
+    background-color: #06164E;
+    grid-template-rows: repeat(6,65px);
+    height: 510px;
+}
+
+.options>a{
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  background-color: #3850A3;
+  text-decoration: none;
+  color: black;
+}
+
+.options>a>div{
+    
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    align-self: center;
+    color: white;
+    
+}
+
+.options>a:hover{
+    background-color: #ffffff;
+    
+}
+
+.options>a>div:hover{
+    color: #06164E;
+    font-weight: bold;
+}
+
+#active{
+    color: #06164E;
+    background-color: white;
+    font-weight: bold;
+}
+#active div{
+    color: #06164E;
+}
+
+
+
+
+
+
+/*footer css*/
+#one{
+    line-height: 20px;
+}
+
+tr:nth-of-type(even){
+    background-color: #A2B1E5;
+}
+
+tr:nth-of-type(odd){
+    background-color: #A2B1E5;
+}
+
+
+
+.footer{
+    background-color: #06164E;
+    color: white;
+    text-align: center;
+    
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 100%;
+    margin-left: 0px;
+    position: absolute;
+    bottom: 0vh;
+}
+.drop-down{
+    color: black;
+}
+input[value]{
+    background-color: #06164E ;
+    color: white;
+    height:30px;
+    width:100px;
+}
+
+select{
+    background-color: ;
+    color: black;
+    height:30px;
+    width:600px;
+    padding: 15px;
+    padding-left: auto;
+    padding-right: auto;
+}

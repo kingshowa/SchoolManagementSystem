@@ -1,0 +1,267 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgba(155, 155,  219, 0.3);
+}
+
+.tete{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    box-shadow: 3px 2px 2px rgba(33,33,33,0.3);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: #ffffff;
+}
+
+
+.uni-name{
+    padding-top: 2px;
+    text-align: center;
+    color: #06164E;
+    align-items: center;
+}
+
+
+#profile{
+    text-align: center;
+    font-size: 13px;
+}
+#profile a{
+    text-decoration: none;
+    color: darkblue;
+}
+#prof-pic{
+    border-radius: 50%;
+}
+/*end of header*/
+
+
+
+
+button{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.main-side{
+    margin-top: 5vh;
+   display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 0.5fr 1.5fr;
+    width: 100%;
+    grid-column-gap: 2vw;
+    
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    
+ 
+}
+
+.options{
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    grid-row-gap: 2vh;
+    align-self: right;
+    background-color: #06164E;
+    grid-template-rows: repeat(6,65px);
+    min-height: 510px;
+}
+
+.options>div{
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  background-color: #3850A3;
+}
+
+.options>div>a{
+    text-decoration: none;
+    color: black;
+    align-self: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10% 5%;
+}
+
+.options>div:hover{
+    background-color: #ffffff;
+    
+}
+
+.options>div>a:hover{
+    color: black;
+}
+
+#active{
+    color: #06164E;
+    background-color: white;
+    font-weight: bold;
+}
+
+.code{
+    padding-top: 1.3vh;
+}
+
+.code p{
+    margin-top: 30px;
+}
+.code p:nth-child(1){
+    margin-top: 0px;
+}
+
+.delete-div{
+    display: grid;
+    grid-template-columns:  0.6fr 1.4fr;
+    background-color: #A2B1E5;  
+    padding-top: 5vh;
+    padding-left: 10%;
+    padding-right: 10%; 
+}
+
+.diva>form{
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 4vh 4vh;
+ 
+     grid-row-gap: 2vh;
+     height: 10vh;
+    
+}
+
+.diva input, label{
+    height: 35px;
+    background-color: rgb(255, 255, 255,0.49);
+    border: 2px solid rgba(33,33,33,0.3);
+}
+
+.diva>form>button{
+    background-color: #06164E;
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+input[type="file"]{
+    display: ;
+    background-color: transparent;
+    margin-left: -90px;
+    padding-top: 5px;
+    width: 120%;
+    cursor: pointer;
+}
+label{
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+/*footer css*/
+#one{
+    line-height: 20px;
+}
+
+tr:nth-of-type(even){
+    background-color: #A2B1E5;
+}
+
+tr:nth-of-type(odd){
+    background-color: #ffffff77;
+}
+
+
+
+.footer{
+    background-color: #06164E;
+    color: white;
+    text-align: center;
+    
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 100%;
+    margin-left: 0px;
+    position: absolute;
+    bottom: 0vh;
+}
+
+
+
+
+
+
+.options{
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    grid-row-gap: 2vh;
+    align-self: right;
+    background-color: #06164E;
+    grid-template-rows: repeat(6,8vh);
+    height: 510px;
+}
+
+.options>a{
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  background-color: #3850A3;
+  text-decoration: none;
+  color: black;
+}
+
+.options>a>div{
+    
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    align-self: center;
+    color: white;
+    
+}
+
+.options>a:hover{
+    background-color: #ffffff;
+    
+}
+
+.options>a>div:hover{
+    color: #06164E;
+    font-weight: bold;
+}
+
+#active{
+    color: #06164E;
+    background-color: white;
+    font-weight: bold;
+}
+#active div{
+    color: #06164E;
+}

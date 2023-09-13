@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+/*GENERAL CSS FOR BODY*/
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/*HEADER*/
+
+.tete{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    box-shadow: 3px 2px 2px rgba(33,33,33,0.3);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: #ffffff;
+}
+
+
+.uni-name{
+    padding-top: 2px;
+    text-align: center;
+    color: #06164E;
+    align-items: center;
+}
+
+
+#profile{
+    text-align: center;
+    font-size: 13px;
+}
+#prof-pic{
+    border-radius: 50%;
+}
+
+
+/*SECTION BETWEEN HEADER AND FOOTER*/
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url("images/bgimage.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    margin: 0;
+    padding: 0 60px;
+}
+
+
+/*DIV CONTAINING THE INSTRUCTIONS MESSAGE STYLE*/
+.content-text
+{
+    width: 50%;
+    font-size: 35px;
+    font-weight: bolder;
+    color: #06164E ;
+    margin-bottom: 150px;
+}
+
+
+/*DIV CONTAINING THE FORM*/
+.content-form{
+    color: #FFFFFF;
+    background-color: #06164E;
+    opacity: 0.9;
+    border-radius: 15px;
+    width: 300px;
+}
+/*GENERAL FORM STYLE*/
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+/*DIV CONTAINING EACH ELEMENT OF THE FORM*/
+.champ {
+    margin-top: 20px;
+}
+
+/*BUTTON CONNEXION AND INSCRIPTION*/
+.champ input {
+    padding-left: 15px;
+    color: #FFF;
+    border-radius: 20px;
+    border: 1px solid white;
+    height: 27px;
+    background-color: #06164E;
+    width: 220px;
+}
+
+.champ input[type="submit"]{
+    padding: 0 35px;
+    background-color: #D0D7F2;
+    color: #06164E;
+    font-size: large;
+    font-weight: bold;
+}
+
+.champ input[type="date"]{
+    padding-right: 75px;
+    color: #FFF;
+
+}
+
+/*LIEN S'INSCRIRE ET CONNEXION*/
+.champ a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/*FOOTER*/
+/*footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #06164E ;
+    font-family: Roboto;
+    color: #FFFFFF;
+}
+
+footer .pied{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+}
+
+footer .pied p {
+    margin: 2px;
+}*/
+
+/*footer css*/
+#one{
+    line-height: 20px;
+}
+
+
+.footer{
+    background-color: #06164E;
+    color: white;
+    text-align: center;
+    
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 100%;
+    margin-left: 0px;
+    position: absolute;
+    bottom: 0vh;
+}
+
+
+
+
+
+
+
+@media all and (max-width:400px){
+    .main-side{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 145%;
+        border: 2px solid red;
+        padding: 0px;
+        height: 130vh;
+        margin-left: 0%;
+        margin-right: 0%;
+        
+    }
+    .main-side>div:nth-child(1){
+        width: 95%;
+        margin: auto;
+    }
+
+    .main-side>div:nth-child(2){
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 5vh;
+        
+    }
+
+    table{
+      width: 90%;
+    }
+    
+   .tete{
+       display: grid;
+       grid-template-columns: 0.2fr 1.6fr 0.2fr;
+   }
+    
+    .tete,.footer{
+          width: 145%;
+         
+    }
+
+   .footer{
+       position:static;
+   }
+
+}
